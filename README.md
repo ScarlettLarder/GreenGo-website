@@ -1,4 +1,4 @@
-### GreenGo Product website 
+# GreenGo Product website 
 *Made by Luke, Scarlett, Arron, Brendan and Charlie*
 
 ## Links
