@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +16,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html className='mx-auto' lang="en">
+      <body className={inter.className}>
+        <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-5 w-full'>
+          <Link href='/product' className=''>Buy Here</Link>
+          <Link href='/about' className=''>About</Link>
+          <img src='vercel.svg' height={200} width={200}></img> 
+          <Link href='/contact' className=''>Contact</Link>
+          <Link href='/cart' className=''>Cart</Link> 
+        </nav>
+      {children}
+      </body>
     </html>
   )
 }
