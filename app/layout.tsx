@@ -26,20 +26,20 @@ export default function RootLayout({
         <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-3 w-full'>
           <Link href='/product' className=''>Buy Here</Link>
           
-            <button className='bg-bluey py-1 px-2 rounded-xl hover:bg-pinky items-center inline-flex justify-between' id='dropdownDefaultButton' data-dropdown-toggle='dropdown' type='button'>About
+            <button className='bg-bluey py-1 px-2 rounded-xl hover:bg-pinky items-center inline-flex justify-between' id='dropdownHoverButton' data-dropdown-toggle='dropdownHover' data-dropdown-trigger='hover' type='button'>About
               <svg className='w-2.5 h-2.5 ml-2.5' xmlns="http://www.w3.org/2000/svg" fill='none' viewBox='0 0 10 6' aria-hidden='true'> 
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
               </svg>
             </button>
-            <div className='z-10 hidden divide-y divide-white rounded-xl text-md shadow-xl m-3 bg-limey' id='dropdown'>
-              <ul className='py-2 text-gray text-small' aria-labelledby='dropdownDefaultButton'>
-                <li>  
+            <div className='z-10 hidden divide-y divide-white rounded-lg text-md shadow-xl m-3 bg-limey w-fill' id='dropdownHover'>
+              <ul className='py-2 text-gray text-sm' aria-labelledby='dropdownHoverButton'>
+                <li className='hover:bg-lightlime block py-2 px-4'>  
                   <a href='/blog' className=''>Blog</a>
                 </li>
-                <li>
+                <li className='hover:bg-lightlime block py-2 px-4'>
                   <a href='/' className=''>Nutrition</a>
                 </li>
-                <li>
+                <li className='hover:bg-lightlime block py-2 px-4'>
                   <a href='/' className=''>Reviews</a>
                 </li>
               </ul>
