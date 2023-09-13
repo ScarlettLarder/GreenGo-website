@@ -17,11 +17,38 @@ export default function RootLayout({
 }) {
   return (
     <html className='mx-auto' lang="en">
+      <head>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+      </head>
       <body className={inter.className}>
-        <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-5 w-full'>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+        <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-3 w-full'>
           <Link href='/product' className=''>Buy Here</Link>
-          <Link href='/about' className=''>About</Link>
-          <img src='vercel.svg' height={200} width={200}></img> 
+          
+            <button className='bg-bluey py-1 px-2 rounded-xl hover:bg-pinky items-center inline-flex justify-between' id='dropdownDefaultButton' data-dropdown-toggle='dropdown' type='button'>About
+              <svg className='w-2.5 h-2.5 ml-2.5' xmlns="http://www.w3.org/2000/svg" fill='none' viewBox='0 0 10 6' aria-hidden='true'> 
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+            </button>
+            <div className='z-10 hidden divide-y divide-white rounded-xl text-md shadow-xl m-3 bg-limey' id='dropdown'>
+              <ul className='py-2 text-gray text-small' aria-labelledby='dropdownDefaultButton'>
+                <li>  
+                  <a href='/blog' className=''>Blog</a>
+                </li>
+                <li>
+                  <a href='/' className=''>Nutrition</a>
+                </li>
+                <li>
+                  <a href='/' className=''>Reviews</a>
+                </li>
+              </ul>
+            </div>
+            
+
+          <a href='/'>
+            <img src='vercel.svg' height={200} width={200}></img> 
+          </a>
           <Link href='/contact' className=''>Contact</Link>
           <Link href='/cart' className=''>Cart</Link> 
         </nav>
