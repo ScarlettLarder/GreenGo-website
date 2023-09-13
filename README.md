@@ -1,5 +1,5 @@
 # GreenGo Product website 
-*Made by Luke, Scarlett, Arron, Brendan and Charlie*
+*Made by Luke, Scarlett, Aaron, Brendan and Charlie*
 
 ## Links
 - Trello - To update and see your tasks for the project
