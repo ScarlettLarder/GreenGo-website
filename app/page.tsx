@@ -5,6 +5,7 @@ export default function Home() {
     <main className="">
       <div className="">
         <p>Go Green Product here.</p>
+        <p>Test 1 2 3</p> 
       </div>
     </main>
   )
