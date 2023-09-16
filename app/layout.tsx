@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
       </head>
       <body className={inter.className}>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" async></script>
 
         <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-3 w-full'>
           <Link href='./product' className=''>Buy Here</Link>
@@ -47,7 +48,7 @@ export default function RootLayout({
             
 
           <a href='/'>
-            <img src='vercel.svg' height={200} width={200}></img> 
+            <Image alt="placeholder" src='vercel.svg' height={200} width={200}></Image> 
           </a>
           <Link href='/contact' className=''>Contact</Link>
           <Link href='/cart' className=''>Cart</Link> 
