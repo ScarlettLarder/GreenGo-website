@@ -24,7 +24,7 @@ export default function RootLayout({
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
         <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-3 w-full'>
-          <Link href='/product' className=''>Buy Here</Link>
+          <Link href='./product' className=''>Buy Here</Link>
           
             <button className='bg-bluey py-1 px-2 rounded-xl hover:bg-pinky items-center inline-flex justify-between' id='dropdownHoverButton' data-dropdown-toggle='dropdownHover' data-dropdown-trigger='hover' type='button'>About
               <svg className='w-2.5 h-2.5 ml-2.5' xmlns="http://www.w3.org/2000/svg" fill='none' viewBox='0 0 10 6' aria-hidden='true'> 
