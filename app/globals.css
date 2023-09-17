@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html{
+        font-family: 'League Spartan', sans-serif;
+    }
+}
+
+@layer components {
+    .title {
+        font-family: "basenji-variable", sans-serif;
+        font-variation-settings: "ital" 0, "wght" 400;
+    }
+}
+

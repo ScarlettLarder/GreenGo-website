@@ -1,10 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import Image from 'next/image'
+import { League_Spartan } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const league_spartan = League_Spartan({ 
+  subsets: ['latin'],
+  weight: ['500']
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,41 +22,40 @@ export default function RootLayout({
   return (
     <html className='mx-auto' lang="en">
       <head>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.typekit.net/dbn5irt.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
       </head>
-      <body className={inter.className}>
+      <body className={league_spartan.className}>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" async></script>
-
-        <nav className='flex justify-between items-center text-3xl bold border border-black border-b-2 p-3 w-full'>
-          <Link href='./product' className=''>Buy Here</Link>
-          
-            <button className='bg-bluey py-1 px-2 rounded-xl hover:bg-pinky items-center inline-flex justify-between' id='dropdownHoverButton' data-dropdown-toggle='dropdownHover' data-dropdown-trigger='hover' type='button'>About
-              <svg className='w-2.5 h-2.5 ml-2.5' xmlns="http://www.w3.org/2000/svg" fill='none' viewBox='0 0 10 6' aria-hidden='true'> 
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg>
+      <header className="justify-between flex items-center text-3xl bold border bg-backgreen border-lightblue border-b-2 w-full bg-[url('/Nav_bg.svg')] bg-no-repeat bg-right shadow-sm fixed">
+          <Link className='title text-greengo text-4xl float-left ml-5' href="/">GreenGo</Link>
+          <div className="mt-1 sm:mt-2 text-sm flex sm:items-center font-normal sm:text-2xl bg-green-100 border-4 border-bordergreen rounded-b-2xl rounded-tr-2xl rounded-tl-md mr-10 mb-2 ">
+            <button className='bg-bluey py-1 rounded-xl hover:bg-pinky items-center inline-flex px-5' id='dropdownHoverButton' data-dropdown-toggle='dropdownHover' data-dropdown-trigger='hover' type='button'>About
+                <svg className='w-2.5 h-2.5 ml-2.5' xmlns="http://www.w3.org/2000/svg" fill='none' viewBox='0 0 10 6' aria-hidden='true'> 
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
             </button>
-            <div className='z-10 hidden divide-y divide-white rounded-lg text-md shadow-xl m-3 bg-limey w-fill' id='dropdownHover'>
-              <ul className='py-2 text-gray text-sm' aria-labelledby='dropdownHoverButton'>
-                <li className='hover:bg-lightlime block py-2 px-4'>  
-                  <a href='/blog' className=''>Blog</a>
-                </li>
-                <li className='hover:bg-lightlime block py-2 px-4'>
-                  <a href='/' className=''>Nutrition</a>
-                </li>
-                <li className='hover:bg-lightlime block py-2 px-4'>
-                  <a href='/' className=''>Reviews</a>
-                </li>
-              </ul>
-            </div>
-            
-
-          <a href='/'>
-            <Image alt="placeholder" src='vercel.svg' height={200} width={200}></Image> 
-          </a>
-          <Link href='/contact' className=''>Contact</Link>
-          <Link href='/cart' className=''>Cart</Link> 
-        </nav>
-      {children}
+            <div className=' rounded-lg text-md shadow-xl m-5 border-2 bg-green-50 border-greengo' id='dropdownHover'>
+                <ul className='py-2 text-gray text-sm ' aria-labelledby='dropdownHoverButton'>
+                  <li className='hover:bg-green-100 py-2 px-4 '>  
+                    <a href='/blog' className=''>Blog</a>
+                  </li>
+                  <li className='hover:bg-green-100 py-2 px-4'>
+                    <a href='/' className=''>Products</a>
+                  </li>
+                  <li className='hover:bg-green-100 py-2 px-4'>
+                    <a href='/' className=''>Sustainability</a>
+                  </li>
+                  <li className='hover:bg-green-100 py-2 px-4'>
+                    <a href='/' className=''>Testimonials</a>
+                  </li>
+                </ul>
+              </div>
+            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5' href="/about">Shop</Link>
+            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5' href="/contactus">Contact Us</Link>
+          </div>
+        </header>
+        {children}
       </body>
     </html>
   )

@@ -15,11 +15,13 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        pinky: '#F2B5D4',
-        bluey: '#279AF1',
-        merlot: '#B8336A',
-        limey: '#C2F8CB',
-        lightlime: '#F0FFF1'
+        pinkaccent: '#F2B5D4',
+        blueaccent: '#279AF1',
+        backgreen: '#C2F8CB',
+        lightblue: '#92D0FF',
+        greengo: '#49A452',
+        lightgreen: '#F0FFF1',
+        bordergreen: '#80C086',
       },
       
     },
