@@ -15,11 +15,11 @@
  * (oh and "npm run dev" in the terminal to see your site btw, and use testbranch for saving)
  */
 
-export default function contact() {
+export default function Testimonials() {
 
     const wow = "insane";
 
     return(
-        <p className="pt-32 bg-red-100">contact</p>
+        <p className="pt-32 bg-red-100">Testimonials</p>
     )
 }
