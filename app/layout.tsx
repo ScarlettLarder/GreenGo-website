@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body className={league_spartan.className}>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" async></script>
-      <header className="justify-between flex items-center text-3xl bold border bg-backgreen border-lightblue border-b-2 w-full bg-[url('/Nav_bg.svg')] bg-no-repeat bg-right shadow-sm fixed">
+      <header className="justify-between flex items-center text-3xl bold border bg-backgreen border-lightblue border-b-2 w-full bg-[url('/Nav_bg.svg')] bg-no-repeat bg-right shadow-sm ">
           <Link className='title text-greengo text-4xl float-left ml-5' href="/">GreenGo</Link>
           <div className="mt-1 sm:mt-2 text-sm flex sm:items-center font-normal sm:text-2xl bg-green-100 border-4 border-bordergreen rounded-b-2xl rounded-tr-2xl rounded-tl-md mr-10 mb-2 ">
             <button className='bg-bluey py-1 rounded-xl hover:bg-pinky items-center inline-flex px-5' id='dropdownHoverButton' data-dropdown-toggle='dropdownHover' data-dropdown-trigger='hover' type='button'>About
@@ -41,18 +41,21 @@ export default function RootLayout({
                     <a href='/blog' className=''>Blog</a>
                   </li>
                   <li className='hover:bg-green-100 py-2 px-4'>
-                    <a href='/' className=''>Products</a>
+                    <a href='/product' className=''>Products</a>
                   </li>
                   <li className='hover:bg-green-100 py-2 px-4'>
-                    <a href='/' className=''>Sustainability</a>
+                    <a href='/sustainability' className=''>Sustainability</a>
                   </li>
                   <li className='hover:bg-green-100 py-2 px-4'>
-                    <a href='/' className=''>Testimonials</a>
+                    <a href='/testimonials' className=''>Testimonials</a>
+                  </li>
+                  <li className='hover:bg-green-100 py-2 px-4'>
+                    <a href='/about' className=''>About</a>
                   </li>
                 </ul>
               </div>
             <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5' href="/about">Shop</Link>
-            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5' href="/contactus">Contact Us</Link>
+            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5' href="/contact">Contact Us</Link>
           </div>
         </header>
         {children}
