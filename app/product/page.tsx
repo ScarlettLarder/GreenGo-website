@@ -1,25 +1,60 @@
-/**  ---Quick start guide for web dev, delete if/when not needed--- 
- * 
- * TSX is both javascript and html. Html is used after return in tsx, while javascript can be added before the return, where const wow is. 
- * You can also create functions outside of the default function if needed. Raw CSS can be implimented in the "global.css", but you should try to use
- * tailwind most of the time by adding ClassName to your headings, like in the <p></p> tag and adding varibles like the ones in the cheatsheet (https://tailwindcomponents.com/cheatsheet/)
- * Tailwind is a library for css that makes it easier to work with; please look at the Core Concepts pages in the docs:
- * https://tailwindcss.com/docs/utility-first
- * Tailwind CheatSheet can be used to quickly get class names, such as sizes, colours ect. Just look it up in the search bar!
- * https://tailwindcomponents.com/cheatsheet/
- * 
- * For some general tips, try to make your site to look like the figma design as much as possible, tailwind.config.ts has preset colours from the pallet that you can call
- * instead of "red-100" for example. Look at the base page.tsx for main page if you want to look at some of my code to use for reverse engineering.
- * 
- * Goodluck!
- * (oh and "npm run dev" in the terminal to see your site btw, and use testbranch for saving)
- */
+import Image from "next/image";
 
 export default function product() {
 
     const wow = "insane";
 
+    const CurrentProducts = [
+        {
+            product: 'GreenGo',
+            flavortext: 'Our classic taste',
+            desc: 'The classic GreenGo flavour of lemmon and lime. Very good and cool. ',
+            color:'border-purple-300',
+            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageAlt: 'Product',
+            datacolor: 'greengo'
+        },
+        {
+            product: 'GreenGo Peachy',
+            flavortext: 'Our peachy',
+            desc: 'The classic GreenGo flavour of lemmon and lime. Very good and cool. ',
+            color:'border-purple-300',
+            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageAlt: 'Product',
+            datacolor: 'Peach'
+        },
+        {
+            product: 'GreenGo Apple' ,
+            flavortext: 'Our applres',
+            desc: 'The classic GreenGo flavour of lemmon and lime. Very good and cool. ',
+            color:'border-purple-300',
+            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageAlt: 'Product',
+            datacolor: 'Apple'
+        },
+    ]   
+
     return(
-        <p>product</p>
+        <div className='mt-16 mb-5'>
+            <div>
+                <p className='title text-gray-500 text-6xl ml-20'>All <span className='text-greengo'>Products</span></p>
+            </div>
+                <div className="grid grid-cols-3 gap-14  duration-150 ease-in delay-75 prodDesc mt-10 mx-32">
+                {CurrentProducts.map((index) => (
+                    <a key={index.product}>
+                        <div data-color={index.datacolor} className='border-4 border-lightblue rounded-3xl shadow-2xl productCollect'>
+                        <div className='bg-bordergreen m-5 rounded-b-2xl rounded-tr-3xl rounded-tl-xl shadow-xl'>
+                            <Image className="rounded-tr-3xl rounded-tl-xl rounded-b-3xl " src="/Product_CanPlaceholder.jpg" width="700" height="100" alt="can"/>
+                            <div>
+                                <p className='text-3xl text-center p-2.5 font-lightbold'>{index.product}</p>
+                            </div>
+                        </div>
+                            <p className='px-10 text-center text-3xl mb-2'>{index.flavortext}</p>
+                            <p className="px-10 text-center text-3xl mb-10 prodDesc text-gray-600">geg</p>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
     )
 }

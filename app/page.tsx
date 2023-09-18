@@ -38,10 +38,12 @@ export default function Home() {
             <p className='px-10 text-center text-3xl mb-10 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
       </div>
+
       <div className='mt-10 mb-5'>
         <p className='title text-gray-700 text-7xl text-center'>So, whats <span className='text-greengo'>Inside?</span></p>
       </div>
-      <div className='grid-cols-2 grid'>
+
+      <div className='grid-cols-2 grid mb-10'>
         <div className=''>
           <p className='ml-32 text-4xl'>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <p className='ml-32 text-3xl text-gray-700 mt-10'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -49,8 +51,6 @@ export default function Home() {
         <Image className='mx-auto border-4 border-lightblue rounded-b-3xl rounded-tr-3xl rounded-tl-xl ' alt="green" src="/Main_Inside.jpg" width="500" height="100" />
       </div>
       
-
-
     </main>
   )
 }
