@@ -5,6 +5,7 @@
 @layer base {
     html{
         font-family: 'League Spartan', sans-serif;
+        scroll-behavior: smooth;
     }
 }
 
@@ -14,4 +15,26 @@
         font-variation-settings: "ital" 0, "wght" 400;
     }
 }
+
+
+.productCollect[data-color="Apple"]:hover {
+    border-color: #afe48d;
+    background-color: rgb(216, 255, 216);
+    transition: 400ms;
+    transition-timing-function: ease;
+  }
+
+.productCollect[data-color="Peach"]:hover {
+    border-color: #f3cf81;
+    background-color: rgb(255, 246, 216);
+    transition: 400ms;
+    transition-timing-function: ease;
+  }
+
+.productCollect[data-color="greengo"]:hover {
+    border-color: #89db9b;
+    background-color: rgb(196, 250, 225);
+    transition: 400ms;
+    transition: all .2s ease-in;
+  }
 
