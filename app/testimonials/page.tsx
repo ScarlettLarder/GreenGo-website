@@ -1,3 +1,6 @@
+'use client';
+import { Carousel } from "flowbite-react";
+
 /**  ---Quick start guide for web dev, delete if/when not needed--- 
  * 
  * TSX is both javascript and html. Html is used after return in tsx, while javascript can be added before the return, where const wow is. 
@@ -20,6 +23,16 @@ export default function Testimonials() {
     const wow = "insane";
 
     return(
-        <p className="pt-32 bg-red-100">Testimonials</p>
+        <div className="flex justify-between bottom-0">
+            <Carousel>
+                <img src="/Main_Forest.jpg" alt="Forest" height={200} width={200}/>
+                <img src="/Main_Health.jpg" alt="Health"  height={200} width={200}/>
+                <img src="/Main_Ingredients.jpg" alt="Ingredients"  height={200} width={200}/>
+            
+            </Carousel>
+            
+        </div>
+
+        
     )
 }
