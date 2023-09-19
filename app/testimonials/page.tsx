@@ -23,15 +23,18 @@ export default function Testimonials() {
     const wow = "insane";
 
     return(
-        <div className="flex justify-between bottom-0">
-            <Carousel>
-                <img src="/Main_Forest.jpg" alt="Forest" height={200} width={200}/>
-                <img src="/Main_Health.jpg" alt="Health"  height={200} width={200}/>
-                <img src="/Main_Ingredients.jpg" alt="Ingredients"  height={200} width={200}/>
+        <div className="mt-16 ">
+            <h1 className="text-center text-5xl text-greengo">Testimonials</h1>
+            <div className="h-screen m-10 z-10">
+                <Carousel className="h-3/4 border border-blue-600">
+                    <img src="/Main_Forest.jpg" alt="Forest" />
+                    <img src="/Main_Health.jpg" alt="Health" />
+                    <img src="/Main_Ingredients.jpg" alt="Ingredients" />
+                </Carousel>
             
-            </Carousel>
-            
+            </div>
         </div>
+        
 
         
     )
