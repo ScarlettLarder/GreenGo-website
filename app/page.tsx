@@ -1,10 +1,28 @@
+"use client"
+
 import Image from 'next/image'
+import Spline from '@splinetool/react-spline';
+
+
 
 export default function Home() {
   return (
     <main className="">
-      <div className="bg-[url('/Main_herobg.svg')] bg-center bg-no-repeat bg-cover">
-        <Image className="mx-auto pt-10" src="/Main_CanPlaceholder.svg" height="1200" width="450" alt="can" />
+      <div className="bg-[url('/Main_herobg.svg')] bg-center bg-no-repeat bg-cover relative">
+        <div className=''>
+          <div className="waveTextAnimated wow text-9xl text-gray-700">
+            <span>W</span>
+            <span>E</span>
+            <span>L</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>E</span>
+          </div>
+        </div>
+        <div className='z-40 relative'>
+          <Spline scene="https://prod.spline.design/rrpNlXeZXTzEdg63/scene.splinecode" />
+        </div>
       </div>
       <div className='mt-28 mb-5'>
         <p className='title text-gray-700 text-7xl text-center'>What makes us <span className='text-greengo'>Special</span></p>
