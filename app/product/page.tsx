@@ -8,7 +8,7 @@ export default function product() {
         {
             product: 'GreenGo',
             flavortext: 'Our classic taste',
-            desc: 'The classic GreenGo flavour of lemmon and lime. Very good and cool. ',
+            desc: 'The GreenGo flavour of lemon and lime, bold but tasteful.',
             color:'border-purple-300',
             imageSrc: '/Product_CanPlaceholder.jpg',
             imageAlt: 'Product',
@@ -17,7 +17,7 @@ export default function product() {
         {
             product: 'GreenGo Peachy',
             flavortext: 'Our peachy',
-            desc: 'The classic GreenGo flavour of lemmon and lime. Very good and cool. ',
+            desc: 'A peachy twist adding elegance and a subtler flavour.',
             color:'border-purple-300',
             imageSrc: '/Product_CanPlaceholder.jpg',
             imageAlt: 'Product',
@@ -25,12 +25,39 @@ export default function product() {
         },
         {
             product: 'GreenGo Apple' ,
-            flavortext: 'Our applres',
-            desc: 'The classic GreenGo flavour of lemmon and lime. Very good and cool. ',
+            flavortext: 'Our apples',
+            desc: 'The apple flavour, adding its sweetness and fruity flavour.',
             color:'border-purple-300',
             imageSrc: '/Product_CanPlaceholder.jpg',
             imageAlt: 'Product',
             datacolor: 'Apple'
+        },
+        {
+            product: 'GreenGo Lemon' ,
+            flavortext: 'Our lemony',
+            desc: 'A slightly different, but highly requested, flavour- only online.',
+            color:'border-purple-300',
+            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageAlt: 'Product',
+            datacolor: 'Lemon'
+        },
+        {
+            product: 'GreenGo 087' ,
+            flavortext: 'its 087 time',
+            desc: 'A burst of grape with its boldness and special flavouring.',
+            color:'border-purple-300',
+            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageAlt: 'Product',
+            datacolor: '087'
+        },
+        {
+            product: 'GreenGo Berries' ,
+            flavortext: 'mmm berries',
+            desc: 'A combo of strawberries, rasberries, blackberries and more- its iconic flavour is sure to impress',
+            color:'border-purple-300',
+            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageAlt: 'Product',
+            datacolor: 'Berry'
         },
     ]   
 
@@ -50,7 +77,7 @@ export default function product() {
                             </div>
                         </div>
                             <p className='px-10 text-center text-3xl mb-2'>{index.flavortext}</p>
-                            <p className="px-10 text-center text-3xl mb-10 prodDesc text-gray-600">geg</p>
+                            <p className="px-10 text-center text-3xl mb-10 prodDesc text-gray-600">{index.desc}</p>
                         </div>
                     </a>
                 ))}

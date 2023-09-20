@@ -37,6 +37,25 @@
     transition: 400ms;
     transition: all .2s ease-in;
   }
+.productCollect[data-color="Lemon"]:hover {
+    border-color: #dbda89;
+    background-color: rgb(250, 246, 196);
+    transition: 400ms;
+    transition: all .2s ease-in;
+  }
+  .productCollect[data-color="087"]:hover {
+    border-color: #c489db;
+    background-color: rgb(226, 196, 250);
+    transition: 400ms;
+    transition: all .2s ease-in;
+  }
+.productCollect[data-color="Berry"]:hover {
+    border-color: #fa88f0;
+    background-color: rgb(205, 149, 228);
+    transition: 400ms;
+    transition: all .2s ease-in;
+  }
+
 
 .waveTextAnimated {
     margin-top: 0.6em;
@@ -110,3 +129,7 @@
     right: 0;
     z-index: 2;
  }
+
+.letter {
+  letter-spacing: 10px;
+}
