@@ -34,7 +34,7 @@ export default function Testimonials() {
                 </Carousel>
             
             </div>
-        </div>
         <p className="pt-32 bg-red-100">Testimonials</p>
+        </div>
     )
 }

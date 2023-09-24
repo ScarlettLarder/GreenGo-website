@@ -44,8 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-=======
+}
+
 .productCollect[data-color="Lemon"]:hover {
     border-color: #dbda89;
     background-color: rgb(250, 246, 196);

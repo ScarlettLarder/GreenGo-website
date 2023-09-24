@@ -59,7 +59,7 @@ export default function blog() {
 
                 </div>
             </div>
+            <p className="pt-32 bg-red-100">blog</p>
         </main>
-        <p className="pt-32 bg-red-100">blog</p>
     )
 }
