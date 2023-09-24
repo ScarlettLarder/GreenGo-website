@@ -1,26 +1,15 @@
-/**  ---Quick start guide for web dev, delete if/when not needed--- 
- * 
- * TSX is both javascript and html. Html is used after return in tsx, while javascript can be added before the return, where const wow is. 
- * You can also create functions outside of the default function if needed. Raw CSS can be implimented in the "global.css", but you should try to use
- * tailwind most of the time by adding ClassName to your headings, like in the <p></p> tag and adding varibles like the ones in the cheatsheet (https://tailwindcomponents.com/cheatsheet/)
- * Tailwind is a library for css that makes it easier to work with; please look at the Core Concepts pages in the docs:
- * https://tailwindcss.com/docs/utility-first
- * Tailwind CheatSheet can be used to quickly get class names, such as sizes, colours ect. Just look it up in the search bar!
- * https://tailwindcomponents.com/cheatsheet/
- * 
- * For some general tips, try to make your site to look like the figma design as much as possible, tailwind.config.ts has preset colours from the pallet that you can call
- * instead of "red-100" for example. Look at the base page.tsx for main page if you want to look at some of my code to use for reverse engineering.
- * 
- * Goodluck!
- * (oh and "npm run dev" in the terminal to see your site btw, and use testbranch for saving)
- */
-
+import Image from 'next/image'
 export default function about() {
 
     const wow = "insane";
 
     return(
-        <p className="pt-32 bg-red-100">about us</p>
-
+        <main>
+            <Image className='float-right mt-20 mr-32 border-4 border-lightblue rounded-b-3xl rounded-tr-3xl rounded-tl-xl hover:scale-105 duration-100' alt="green" src="/About_GreenCo3D.PNG" width="500" height="100" />
+            <p className='title text-gray-700 text-6xl pt-20 ml-20'>About <span className='text-greengo'>Us</span></p>
+            <div className='pt-10 flex flex-row'>
+                <span className='ml-20 text-4xl basis-3/4'>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. <p className='text-3xl text-gray-700 mt-10'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> </span>
+            </div>
+        </main>
     )
 }

@@ -25,16 +25,15 @@ export default function Testimonials() {
 
     return(
         <div className="mt-16 ">
-            <h1 className="text-center text-5xl text-greengo">Testimonials</h1>
-            <div className="h-screen m-10 z-10">
-                <Carousel className="h-3/4 border border-blue-600">
+            <h1 className="title text-6xl text-center text-greengo">Testimonials</h1>
+            <div className="h-screen ml-32 mr-32 z-10 ">
+                <Carousel className="h-3/4 border-4 border-greengo rounded-xl">
                     <img src="/Main_Forest.jpg" alt="Forest" />
                     <img src="/Main_Health.jpg" alt="Health" />
                     <img src="/Main_Ingredients.jpg" alt="Ingredients" />
                 </Carousel>
             
             </div>
-        <p className="pt-32 bg-red-100">Testimonials</p>
         </div>
     )
 }

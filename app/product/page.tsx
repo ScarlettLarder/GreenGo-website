@@ -77,7 +77,6 @@ export default function product() {
                             </div>
                         </div>
                             <p className='px-10 text-center text-3xl mb-2'>{index.flavortext}</p>
-                            <p className="px-10 text-center text-3xl mb-10 prodDesc text-gray-600">geg</p>
                             <p className="px-10 text-center text-3xl mb-10 prodDesc text-gray-600">{index.desc}</p>
                         </div>
                     </a>
