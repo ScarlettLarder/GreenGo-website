@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="">  
       <div className="bg-[url('/Main_herobg.svg')] bg-center bg-no-repeat bg-cover relative">
         <div className=''>
           <div className="waveTextAnimated wow pt-10 letter tracking-widest text-9xl text-gray-700 px-10">
@@ -68,7 +68,6 @@ export default function Home() {
         </div>
         <Image className='mx-auto border-4 border-lightblue rounded-b-3xl rounded-tr-3xl rounded-tl-xl hover:scale-105 duration-100' alt="green" src="/Main_Inside.jpg" width="500" height="100" />
       </div>
-      
     </main>
   )
 }
