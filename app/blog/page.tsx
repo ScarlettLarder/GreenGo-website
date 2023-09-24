@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 /**  ---Quick start guide for web dev, delete if/when not needed--- 
@@ -59,5 +60,6 @@ export default function blog() {
                 </div>
             </div>
         </main>
+        <p className="pt-32 bg-red-100">blog</p>
     )
 }

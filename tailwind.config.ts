@@ -23,7 +23,6 @@ const config: Config = {
         lightgreen: '#F0FFF1',
         bordergreen: '#80C086',
       },
-      
     },
   },
   plugins: [require('flowbite/plugin')],

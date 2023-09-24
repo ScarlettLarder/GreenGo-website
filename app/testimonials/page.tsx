@@ -1,3 +1,4 @@
+
 'use client';
 import { Carousel } from "flowbite-react";
 
@@ -34,8 +35,6 @@ export default function Testimonials() {
             
             </div>
         </div>
-        
-
-        
+        <p className="pt-32 bg-red-100">Testimonials</p>
     )
 }
