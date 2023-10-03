@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function product() {
 
     const wow = "insane";
@@ -81,7 +81,16 @@ export default function product() {
                         </div>
                     </a>
                 ))}
+        </div>
+            <div className="flex flex-col items-center text-4xl">
+
+                <Image src="/BarackQR.jpg" width="300" height="100" alt="QR"/>
+                <p>Let us know what you think!</p>
+                <Link className="underline" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here!</Link>
+
+
             </div>
+            
         </div>
     )
 }
