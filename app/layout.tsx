@@ -60,6 +60,14 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <div className='bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 justify-between flex items-center text-3xl bold border-4 border-t-fuchsia-300 bottom-0 relative'>
+          <div className='flex'>
+            <div className='bg-lightgreen p-1 ml-3 pl-3 pr-3 mt-1 rounded-2xl border-blue-400 border-4 block text-2xl hover:bg-green-100'>
+              <a href="#" >Go back to the top</a>
+            </div>
+          </div>
+          <Image className='mt-2 mr-10' src="/NavB_SusSlurp.png" alt="logo" width={220} height={200}/>
+        </div>
       </body>
     </html>
   )

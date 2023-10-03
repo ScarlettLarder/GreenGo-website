@@ -53,7 +53,7 @@ export default function product() {
         {
             product: 'GreenGo Berries' ,
             flavortext: 'mmm berries',
-            desc: 'A combo of strawberries, rasberries, blackberries and more- its iconic flavour is sure to impress',
+            desc: 'Strawberries and more- its iconic flavour is to impress',
             color:'border-purple-300',
             imageSrc: '/Product_CanPlaceholder.jpg',
             imageAlt: 'Product',
@@ -66,7 +66,7 @@ export default function product() {
             <div>
                 <p className='title text-gray-500 text-6xl ml-20'>All <span className='text-greengo'>Products</span></p>
             </div>
-                <div className="grid grid-cols-3 gap-14  duration-150 ease-in delay-75 prodDesc mt-10 mx-32">
+            <div className="grid grid-cols-3 gap-14  duration-150 ease-in delay-75 prodDesc mt-10 mx-32 mb-10 ">
                 {CurrentProducts.map((index) => (
                     <a key={index.product}>
                         <div data-color={index.datacolor} className='border-4 border-lightblue rounded-3xl shadow-2xl productCollect'>
@@ -81,12 +81,13 @@ export default function product() {
                         </div>
                     </a>
                 ))}
-        </div>
-            <div className="flex flex-col items-center text-4xl">
+            </div>
+            <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
+            <div className="flex flex-col items-center text-4xl mb-20">
 
                 <Image src="/BarackQR.jpg" width="300" height="100" alt="QR"/>
                 <p>Let us know what you think!</p>
-                <Link className="underline" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here!</Link>
+                <Link className="underline hover:text-greengo duration-200" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here</Link>
 
 
             </div>
