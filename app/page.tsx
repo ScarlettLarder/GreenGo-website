@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-
+import Spline from '@splinetool/react-spline';
 import Link from 'next/link'
 
 
@@ -21,7 +21,7 @@ export default function Home() {
           </div>
         </div>
         <div className='z-30 relative pt-18'>
-
+          <Spline scene="https://prod.spline.design/rrpNlXeZXTzEdg63/scene.splinecode" />
         </div>
       </div>
       <div className='mt-28 mb-5'>
