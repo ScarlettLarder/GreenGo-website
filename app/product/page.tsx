@@ -82,16 +82,13 @@ export default function product() {
                     </a>
                 ))}
             </div>
-            <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
-            <div className="flex flex-col items-center text-4xl mb-20">
-
-                <Image src="/BarackQR.jpg" width="300" height="100" alt="QR"/>
-                <p>Let us know what you think!</p>
-                <Link className="underline hover:text-greengo duration-200" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here</Link>
-
-
+            <div>
+                <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
+                <div className="flex flex-col items-center text-4xl mb-20">
+                        <p>Find were you can get these Green Go products</p>
+                        <Link className="bg-gradient-to-r from-green-100 to-blue-100 hover:from-green-200 hover:to-blue-50 px-10 py-2 m-4 duration-150 ease-in delay-75 rounded-full border-4 border-lightblue shadow-lightblue shadow-lg" href="/shop" target="_blank">Here</Link>
+                    </div>
             </div>
-            
         </div>
     )
 }

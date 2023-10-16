@@ -6,6 +6,7 @@
     html{
         font-family: 'League Spartan', sans-serif;
         scroll-behavior: smooth;
+        height: 100%
     }
 }
 

@@ -1,24 +1,6 @@
-
 'use client';
-import { Carousel } from "flowbite-react";
-
-/**  ---Quick start guide for web dev, delete if/when not needed--- 
- * 
- * TSX is both javascript and html. Html is used after return in tsx, while javascript can be added before the return, where const wow is. 
- * You can also create functions outside of the default function if needed. Raw CSS can be implimented in the "global.css", but you should try to use
- * tailwind most of the time by adding ClassName to your headings, like in the <p></p> tag and adding varibles like the ones in the cheatsheet (https://tailwindcomponents.com/cheatsheet/)
- * Tailwind is a library for css that makes it easier to work with; please look at the Core Concepts pages in the docs:
- * https://tailwindcss.com/docs/utility-first
- * Tailwind CheatSheet can be used to quickly get class names, such as sizes, colours ect. Just look it up in the search bar!
- * https://tailwindcomponents.com/cheatsheet/
- * 
- * For some general tips, try to make your site to look like the figma design as much as possible, tailwind.config.ts has preset colours from the pallet that you can call
- * instead of "red-100" for example. Look at the base page.tsx for main page if you want to look at some of my code to use for reverse engineering.
- * 
- * Goodluck!
- * (oh and "npm run dev" in the terminal to see your site btw, and use testbranch for saving)
- */
-
+import Image from 'next/image'
+import Link from 'next/link';
 export default function Testimonials() {
 
     const wow = "insane";
@@ -26,14 +8,77 @@ export default function Testimonials() {
     return(
         <div className="mt-16 ">
             <h1 className="title text-6xl text-center text-greengo">Testimonials</h1>
-            <div className="h-screen ml-32 mr-32 z-10 ">
-                <Carousel className="h-3/4 border-4 border-greengo rounded-xl">
-                    <img src="/Main_Forest.jpg" alt="Forest" />
-                    <img src="/Main_Health.jpg" alt="Health" />
-                    <img src="/Main_Ingredients.jpg" alt="Ingredients" />
-                </Carousel>
-            
-            </div>
+            <div className="lg:mx-0 xl:mx-10 2xl:mx-32">
+                <div className="grid lg:grid-cols-2 gap-5 mx-10 sm:mx-20 mt-10"> 
+                    <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
+                        <div>
+                            <p className='flex justify-center text-4xl p-8 text-center'>Very good drink</p>
+                        </div>
+                        <div>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center'>Might just be me tho lol but tbh idk</p>
+                        </div>
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
+                                <Image src={"/Place_1.jpeg"} width={120} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                                <div className='block'>
+                                    <p className='space-y-0.5 text-3xl text-center'>Big cat</p>
+                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>at Big site co</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
+                        <div>
+                            <p className='flex justify-center text-4xl p-8 text-center'>Very good drink</p>
+                        </div>
+                        <div>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center'>Might just be me tho lol but tbh idk</p>
+                        </div>
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
+                                <Image src={"/Place_1.jpeg"} width={120} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                                <div className='block'>
+                                    <p className='space-y-0.5 text-3xl text-center'>Big cat</p>
+                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>at Big site co</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
+                        <div>
+                            <p className='flex justify-center text-4xl p-8 text-center'>Very good drink</p>
+                        </div>
+                        <div>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center'>Might just be me tho lol but tbh idk</p>
+                        </div>
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
+                                <Image src={"/Place_1.jpeg"} width={120} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                                <div className='block'>
+                                    <p className='space-y-0.5 text-3xl text-center'>Big cat</p>
+                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>at Big site co</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
+                        <div>
+                            <p className='flex justify-center text-4xl p-8 text-center'>Very good drink</p>
+                        </div>
+                        <div>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center'>Might just be me tho lol but tbh idk</p>
+                        </div>
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
+                                <Image src={"/Place_1.jpeg"} width={120} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                                <div className='block'>
+                                    <p className='space-y-0.5 text-3xl text-center'>Big cat</p>
+                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>at Big site co</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
+                    <div className="flex flex-col items-center text-2xl lg:text-4xl  mb-20">
+                        <Image src="/BarackQR.jpg" width="300" height="100" alt="QR"/>
+                        <p className='text-center text-4xl lg:text-2xl'>Let us know what you think!</p>
+                        <Link className="underline hover:text-greengo duration-200 text-center" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here</Link>
+                    </div>
+                </div>
+
         </div>
     )
 }
