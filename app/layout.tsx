@@ -55,8 +55,8 @@ export default function RootLayout({
                   </li>
                 </ul>
               </div>
-            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo hover:bg-pink-100 p-1 px-5 focus:bg-pink-200' href="/shop">Shop</Link>
-            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5 hover:bg-pink-100 focus:bg-pink-200 rounded-br-xl rounded-tr-xl' href="/contact">Contact Us</Link>
+            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo hover:bg-pink-100 p-1 px-5 focus:bg-pink-200 hidden md:visible' href="/shop">Shop</Link>
+            <Link className='hover:text-darkgreen active:text-lmossgreen border-l-4 border-greengo p-1 px-5 hover:bg-pink-100 focus:bg-pink-200 rounded-br-xl rounded-tr-xl hidden md:visible' href="/contact">Contact Us</Link>
           </div>
         </header>
         {children}

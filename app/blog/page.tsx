@@ -10,7 +10,7 @@ export default function blog() {
                 <h1 className="text-6xl underline decoration-greengo">Blog Page</h1>
                 <p className="text-3xl text-gray-600">The latest info from Green Go, right here</p>
             </div>
-            <div className="grid grid-cols-1 justify-center gap-12 mx-16 my-20 ">
+            <div className="grid grid-cols-1 justify-center gap-12 my-20 sm:mx-4">
 
                 <div className="rounded-lg bg-lightgreen flex justify-between drop-shadow-2xl">
                     <div className="p-10">
@@ -19,7 +19,7 @@ export default function blog() {
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip...</p>
                         <p className="pt-5 text-2xl text-gray-600">By big blogger</p>
                     </div>
-                    <Image className='rounded-tl-xl rounded-tr-3xl rounded-b-3xl right-0 m-10' src='/Main_Forest.jpg' alt="Forest" width={400} height={400}/>
+                    <Image className='rounded-tl-xl rounded-tr-3xl rounded-b-3xl right-0 m-10 hidden md:visible' src='/Main_Forest.jpg' alt="Forest" width={400} height={400}/>
                 </div>
 
                 <div className="bg-backgreen rounded-lg flex justify-between drop-shadow-2xl">
