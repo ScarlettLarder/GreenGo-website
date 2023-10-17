@@ -10,9 +10,9 @@ export default function blog() {
                 <h1 className="text-6xl underline decoration-greengo">Blog Page</h1>
                 <p className="text-3xl text-gray-600">The latest info from Green Go, right here</p>
             </div>
-            <div className="grid grid-cols-1 justify-center gap-12 my-20 ">
+            <div className="grid grid-cols-1 justify-center gap-12 mx-20 mt-10">
 
-                <div className="rounded-lg bg-lightgreen flex justify-between drop-shadow-2xl mx-4 md:mx-16">
+                <div className="rounded-lg bg-lightgreen flex justify-between drop-shadow-2xl">
                     <div className="p-10">
                         <h1 className="text-5xl ">Green Go, went? </h1>
                         <p className="pt-5 text-3xl text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
