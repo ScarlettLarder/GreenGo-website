@@ -14,7 +14,7 @@ const Sustainability: FunctionComponent = () => {
             <div className="absolute top-[0px] left-[352px] w-[73px] h-[295.28px] overflow-hidden">
               <img
                 className="absolute top-[5.78px] left-[5.78px] rounded-14xl-5 w-[67.22px] h-[68.16px] object-cover"
-                alt=""
+                alt="THIS IS A COMMIT"
                 src="/plant-symbolremovebgpreview-1@2x.png"
               />
             </div>
