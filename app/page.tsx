@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="sm:container sm:mx-auto">  
+    <main className="">  
       <div className="bg-[url('/Main_herobg.svg')] bg-center bg-no-repeat bg-cover relative">
         <div className=''>
           <div className="waveTextAnimated wow pt-10 letter tracking-widest text-9xl text-gray-700 px-10">
@@ -20,7 +20,7 @@ export default function Home() {
             <span className='px-7'>E</span>
           </div>
         </div>
-        <div className='z-30 relative pt-18 sm:invisible'>
+        <div className='z-30 relative pt-18'>
           <Spline scene="https://prod.spline.design/rrpNlXeZXTzEdg63/scene.splinecode" />
         </div>
       </div>
