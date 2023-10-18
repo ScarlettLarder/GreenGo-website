@@ -1,25 +1,29 @@
-/**  ---Quick start guide for web dev, delete if/when not needed--- 
- * 
- * TSX is both javascript and html. Html is used after return in tsx, while javascript can be added before the return, where const wow is. 
- * You can also create functions outside of the default function if needed. Raw CSS can be implimented in the "global.css", but you should try to use
- * tailwind most of the time by adding ClassName to your headings, like in the <p></p> tag and adding varibles like the ones in the cheatsheet (https://tailwindcomponents.com/cheatsheet/)
- * Tailwind is a library for css that makes it easier to work with; please look at the Core Concepts pages in the docs:
- * https://tailwindcss.com/docs/utility-first
- * Tailwind CheatSheet can be used to quickly get class names, such as sizes, colours ect. Just look it up in the search bar!
- * https://tailwindcomponents.com/cheatsheet/
- * 
- * For some general tips, try to make your site to look like the figma design as much as possible, tailwind.config.ts has preset colours from the pallet that you can call
- * instead of "red-100" for example. Look at the base page.tsx for main page if you want to look at some of my code to use for reverse engineering.
- * 
- * Goodluck!
- * (oh and "npm run dev" in the terminal to see your site btw, and use testbranch for saving)
- */
+import { FunctionComponent } from "react";
+import Image from "next/image";
+const Sustainability: FunctionComponent = () => {
+  return (
+    <div className="bg-gradient-to-br from-green-100 to-blue-100">
+      <p className='title text-gray-700 text-6xl pt-20 ml-20 text-center'>Sustainability <span className='text-greengo'>Commitment</span></p>
+      <div className="grid grid-cols-2 gap-10 mx-10 ">
+        <div className="bg-gradient-to-br from-rose-100 to-rose-200 text-center py-12 px-12 text-3xl rounded-lg">
+          <p>
+            We believe in the purity of nature and the power of responsible sourcing. 
+            Our energy drinks are crafted using only the finest ingredients, procured from organic and sustainable farms.
+          </p>
+          <p className="mt-10">
+            This not only ensures a high-quality product for our consumers but also champions local farmers and eco-friendly 
+            farming practices.
+          </p>
+        </div>
+        <div className="bg-blue-100">
+          <Image src={"/Sustain_Img1.png"} alt="Geese" width={800} height={1000}/>
+        </div>
+        <div className="bg-yellow-100">
+          hello!
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default function Sustainability() {
-
-    const wow = "insane";
-
-    return(
-        <p className="pt-32 bg-red-100">sustainability</p>
-    )
-}
+export default Sustainability;
