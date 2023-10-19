@@ -72,9 +72,9 @@ export default function Testimonials() {
                     </div>
                 </div>
                 <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
-                    <div className="flex flex-col items-center text-2xl lg:text-4xl  mb-20">
+                    <div className="flex flex-col items-center text-4xl  mb-20">
                         <Image src="/BarackQR.jpg" width="300" height="100" alt="QR"/>
-                        <p className='text-center text-4xl lg:text-2xl'>Let us know what you think!</p>
+                        <p className='text-center '>Let us know what you think!</p>
                         <Link className="underline hover:text-greengo duration-200 text-center" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here</Link>
                     </div>
                 </div>
