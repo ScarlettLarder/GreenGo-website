@@ -30,7 +30,7 @@ const Sustainability: FunctionComponent = () => {
              We utilize renewable, recyclable, and biodegradable materials to reduce our environmental footprint. 
           </p>
           <p className="mt-10">
-            Every can you hold has been designed with Mother Earth in mind, ensuring that while you recharge, our planet doesn't deplete.
+            Every can you hold has been designed with Mother Earth in mind, ensuring that while you recharge, our planet doesn&apos;t deplete.
           </p>
         </div>
         <div className="bg-gradient-to-br from-rose-50 to-pink-50 text-center py-12 px-12 mx-20 text-3xl rounded-2xl inline-block align-middle border-4 border-lightblue">
