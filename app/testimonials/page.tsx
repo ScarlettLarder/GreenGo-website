@@ -12,10 +12,10 @@ export default function Testimonials() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-10 sm:mx-20 mt-10"> 
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>"I can always</p>
+                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;I can always</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'> find something at Green Go that I fall in love with instantly."</p>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'> find something at Green Go that I fall in love with instantly.&quot;</p>
                         </div>
                         <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
                                 <Image src={"/Testim_Placeholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
@@ -27,10 +27,10 @@ export default function Testimonials() {
                     </div>
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>"Thanks so much!</p>
+                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;Thanks so much!</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>My Green Go Classic was great and delivery was super fast too!"</p>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>My Green Go Classic was great and delivery was super fast too!&quot;</p>
                         </div>
                         <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
                                 <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
@@ -42,10 +42,10 @@ export default function Testimonials() {
                     </div>
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>"I can trust Green Go</p>
+                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;I can trust Green Go</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>to always deliver a great taste, whatever the flavour."</p>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>to always deliver a great taste, whatever the flavour.&quot;</p>
                         </div>
                         <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
                                 <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
@@ -57,10 +57,10 @@ export default function Testimonials() {
                     </div>
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>"I love their</p>
+                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;I love their</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>attention to the environment and sustainability"</p>
+                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>attention to the environment and sustainability&quot;</p>
                         </div>
                         <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
                                 <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
