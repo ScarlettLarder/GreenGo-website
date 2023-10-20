@@ -4,7 +4,7 @@ import Link from "next/link";
 const Sustainability: FunctionComponent = () => {
   return (
     <div className="bg-gradient-to-br from-green-100 to-indigo-100 ">
-      <div className="bg-[url('/viny.svg')] bg-no-repeat">
+      <div className="bg-[url('/Sustain_Vine1.svg')] bg-no-repeat">
         <p className='title text-gray-700 text-7xl pt-20 ml-20 text-center mb-20'>Sustainability <span className='text-greengo'>Commitment</span></p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-10 pb-14 object-center align-middle ">
@@ -48,7 +48,7 @@ const Sustainability: FunctionComponent = () => {
       </div>
       <div>
                 <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full "/>
-                <div className="flex flex-col items-center text-5xl pb-20 bg-[url('/viny2.svg')] bg-no-repeat bg-right-bottom">
+                <div className="flex flex-col items-center text-5xl pb-20 bg-[url('/Sustain_Vine2.svg')] bg-no-repeat bg-right-bottom">
                         <p>Find out more about us</p>
                         <Link className="bg-gradient-to-r from-green-100 to-blue-100 hover:from-green-200 hover:to-blue-50 px-10 py-2 m-4 duration-150 ease-in delay-75 rounded-full border-4 border-lightblue shadow-lightblue shadow-lg text-4xl" href="/about" target="_blank">Here</Link>
                     </div>
