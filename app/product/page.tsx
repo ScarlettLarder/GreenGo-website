@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export default function product() {
 
     const wow = "insane";
@@ -10,7 +11,7 @@ export default function product() {
             flavortext: 'Our classic taste',
             desc: 'The GreenGo flavour of lemon and lime, bold but tasteful.',
             color:'border-purple-300',
-            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageSrc: '/Products_GreenGoClassic_E1.png',
             imageAlt: 'Product',
             datacolor: 'greengo'
         },
@@ -19,7 +20,7 @@ export default function product() {
             flavortext: 'Our peachy',
             desc: 'A peachy twist adding elegance and a subtler flavour.',
             color:'border-purple-300',
-            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageSrc: '/Products_GreenGoPeachy_E1.png',
             imageAlt: 'Product',
             datacolor: 'Peach'
         },
@@ -28,7 +29,7 @@ export default function product() {
             flavortext: 'Our apples',
             desc: 'The apple flavour, adding its sweetness and fruity flavour.',
             color:'border-purple-300',
-            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageSrc: '/Products_GreenGoApple_E1.png',
             imageAlt: 'Product',
             datacolor: 'Apple'
         },
@@ -37,7 +38,7 @@ export default function product() {
             flavortext: 'Our lemony',
             desc: 'A slightly different, but highly requested, flavour- only online.',
             color:'border-purple-300',
-            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageSrc: '/Products_GreenGoLemon_E1.png',
             imageAlt: 'Product',
             datacolor: 'Lemon'
         },
@@ -46,7 +47,7 @@ export default function product() {
             flavortext: 'its 087 time',
             desc: 'A burst of grape with its boldness and special flavouring.',
             color:'border-purple-300',
-            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageSrc: '/Products_GreenGo087_E1.png',
             imageAlt: 'Product',
             datacolor: '087'
         },
@@ -55,7 +56,7 @@ export default function product() {
             flavortext: 'mmm berries',
             desc: 'Strawberries and more- its iconic flavour is to impress',
             color:'border-purple-300',
-            imageSrc: '/Product_CanPlaceholder.jpg',
+            imageSrc: '/Products_GreenGoBerry_E1.png',
             imageAlt: 'Product',
             datacolor: 'Berry'
         },
@@ -71,7 +72,7 @@ export default function product() {
                     <a key={index.product}>
                         <div data-color={index.datacolor} className='border-4 border-lightblue rounded-3xl shadow-2xl productCollect'>
                         <div className='bg-bordergreen m-5 rounded-b-2xl rounded-tr-3xl rounded-tl-xl shadow-xl'>
-                            <Image className="rounded-tr-3xl rounded-tl-xl rounded-b-3xl " src="/Product_CanPlaceholder.jpg" width="700" height="100" alt="can"/>
+                            <Image className="rounded-tr-3xl rounded-tl-xl rounded-b-3xl " src={index.imageSrc} width="700" height="100" alt="can"/>
                             <div>
                                 <p className='text-3xl text-center p-2.5 font-lightbold'>{index.product}</p>
                             </div>
@@ -82,16 +83,13 @@ export default function product() {
                     </a>
                 ))}
             </div>
-            <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
-            <div className="flex flex-col items-center text-4xl mb-20">
-
-                <Image src="/BarackQR.jpg" width="300" height="100" alt="QR"/>
-                <p>Let us know what you think!</p>
-                <Link className="underline hover:text-greengo duration-200" href="https://www.instagram.com/barackobama/" target="_blank">If you do not have a phone click here</Link>
-
-
+            <div>
+                <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
+                <div className="flex flex-col items-center text-4xl mb-20">
+                        <p>Find were you can get these Green Go products</p>
+                        <Link className="bg-gradient-to-r from-green-100 to-blue-100 hover:from-green-200 hover:to-blue-50 px-10 py-2 m-4 duration-150 ease-in delay-75 rounded-full border-4 border-lightblue shadow-lightblue shadow-lg" href="/shop" target="_blank">Here</Link>
+                    </div>
             </div>
-            
         </div>
     )
 }
