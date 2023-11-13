@@ -10,14 +10,14 @@ export default function Home() {
     <main className="">  
       <div className="bg-[url('/Main_herobg.svg')] bg-center bg-no-repeat bg-cover relative">
         <div className=''>
-          <div className="waveTextAnimated wow pt-10 letter tracking-widest text-9xl text-gray-700 px-10">
-            <span className='px-7'>W</span>
-            <span className='px-7'>E</span>
-            <span className='px-7'>L</span>
-            <span className='px-7'>C</span>
-            <span className='px-7'>O</span>
-            <span className='px-7'>M</span>
-            <span className='px-7'>E</span>
+          <div className="waveTextAnimated wow pt-14 letter tracking-widest text-9xl text-gray-700 px-10">
+            <span className='px-7 text-9xl'>W</span>
+            <span className='px-7 text-9xl'>E</span>
+            <span className='px-7 text-9xl'>L</span>
+            <span className='px-7 text-9xl'>C</span>
+            <span className='px-7 text-9xl'>O</span>
+            <span className='px-7 text-9xl'>M</span>
+            <span className='px-7 text-9xl'>E</span>
           </div>
         </div>
         <div className='z-30 relative pt-18'>

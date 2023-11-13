@@ -2,14 +2,11 @@
 import Image from 'next/image'
 import Link from 'next/link';
 export default function Testimonials() {
-
-    const wow = "insane";
-
     return(
-        <div className="mt-16 ">
+        <div className="mt-8 sm:mt-16 ">
             <h1 className="title text-4xl sm:text-6xl text-center text-greengo">Testimonials</h1>
             <div className="lg:mx-0 xl:mx-10 2xl:mx-32">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-10 sm:mx-20 mt-10"> 
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mx-10 md:mx-20 mt-10"> 
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
                             <p className='flex justify-center text-4xl pt-8 text-center'>&quot;I can always</p>
