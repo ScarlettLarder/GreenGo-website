@@ -24,7 +24,6 @@ export default function RootLayout({
       
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/dbn5irt.css" />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
       </head>
       <body className={league_spartan.className}>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" async></script>
