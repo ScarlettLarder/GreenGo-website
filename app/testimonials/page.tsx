@@ -12,7 +12,7 @@ export default function Testimonials() {
                             <p className='flex justify-center text-2xl sm:text-4xl pt-2 md:pt-8 text-center'>&quot;I can always</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-2xl sm:text-3xl pb-2 sm:pb-8 text-gray-800 text-center px-5'> find something at Green Go that I fall in love with instantly.&quot;</p>
+                            <p className='flex justify-center text-xl sm:text-3xl pb-2 sm:pb-8 text-gray-800 text-center px-5'> find something at Green Go that I fall in love with instantly.&quot;</p>
                         </div>
                         <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 md:p-4 '>
                                 <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={70} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl pb-2'/> 
@@ -24,46 +24,46 @@ export default function Testimonials() {
                     </div>
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;Thanks so much!</p>
+                            <p className='flex justify-center text-2xl sm:text-4xl pt-2 md:pt-8 text-center'>&quot;I love their</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>My Green Go Classic was great and delivery was super fast too!&quot;</p>
+                            <p className='flex justify-center text-xl sm:text-3xl pb-2 sm:pb-8 text-gray-800 text-center px-5'>attention to the environment and sustainability&quot;</p>
                         </div>
-                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
-                                <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 md:p-4 '>
+                                <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={70} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl pb-2'/> 
                                 <div className='block'>
-                                    <p className='space-y-0.5 text-3xl text-center'>Olivia Nguyen</p>
-                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>Siteholder</p>
+                                    <p className='space-y-0.5 text-2xl text-center'>Evelyn Davis</p>
+                                    <p className='space-y-0.5 text-xl text-grey-800 block underline text-center'>SiteHolder</p>
                                 </div>
                         </div>
                     </div>
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;I can trust Green Go</p>
+                            <p className='flex justify-center text-2xl sm:text-4xl pt-2 md:pt-8 text-center'>&quot;Thanks so much!</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>to always deliver a great taste, whatever the flavour.&quot;</p>
+                            <p className='flex justify-center text-xl sm:text-3xl pb-2 sm:pb-8 text-gray-800 text-center px-5'> My Green Go Classic was great and delivery was super fast too!&quot;</p>
                         </div>
-                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
-                                <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 md:p-4 '>
+                                <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={70} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl pb-2'/> 
                                 <div className='block'>
-                                    <p className='space-y-0.5 text-3xl text-center'>John Big</p>
-                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>SiteHolder</p>
+                                    <p className='space-y-0.5 text-2xl text-center'>Evelyn Davis</p>
+                                    <p className='space-y-0.5 text-xl text-grey-800 block underline text-center'>SiteHolder</p>
                                 </div>
                         </div>
                     </div>
                     <div className="bg-gradient-to-r from-green-100 to-blue-100 border-4 border-lightblue shadow-2xl hover:scale-105 duration-100 rounded-xl">
                         <div>
-                            <p className='flex justify-center text-4xl pt-8 text-center'>&quot;I love their</p>
+                            <p className='flex justify-center text-2xl sm:text-4xl pt-2 md:pt-8 text-center'>&quot;I can trust Green Go</p>
                         </div>
                         <div>
-                            <p className='flex justify-center text-3xl pb-8 text-gray-800 text-center px-5'>attention to the environment and sustainability&quot;</p>
+                            <p className='flex justify-center text-xl sm:text-3xl pb-2 sm:pb-8 text-gray-800 text-center px-5'>to always deliver a great taste, whatever the flavour.&quot;</p>
                         </div>
-                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 p-4 '>
-                                <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={120} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl'/> 
+                        <div className='rounded-tr-3xl rounded-tl-xl flex justify-center space-x-3 md:p-4 '>
+                                <Image src={"/Testimon_UserPlaceholder.png"} width={70} height={70} alt='Placeholder' className='rounded-tr-3xl rounded-tl-xl rounded-b-3xl pb-2'/> 
                                 <div className='block'>
-                                    <p className='space-y-0.5 text-3xl text-center'>John Small</p>
-                                    <p className='space-y-0.5 text-2xl text-grey-800 block underline text-center'>SiteHolder</p>
+                                    <p className='space-y-0.5 text-2xl text-center'>Evelyn Davis</p>
+                                    <p className='space-y-0.5 text-xl text-grey-800 block underline text-center'>SiteHolder</p>
                                 </div>
                         </div>
                     </div>
