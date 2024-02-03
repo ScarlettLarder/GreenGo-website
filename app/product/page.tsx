@@ -66,7 +66,7 @@ export default function product() {
             <div>
                 <p className='title text-gray-500 text-6xl ml-20'>All <span className='text-greengo'>Products</span></p>
             </div>
-            <div className="grid grid-cols-3 gap-14  duration-150 ease-in delay-75 prodDesc mt-10 mx-32 mb-10 ">
+            <div className="grid grid-cols-3 gap-14  duration-150 ease-in delay-75 prodDesc mt-10 mx-32 mb-32 ">
                 {CurrentProducts.map((index) => (
                     <a key={index.product}>
                         <div data-color={index.datacolor} className='border-4 border-lightblue rounded-3xl shadow-2xl productCollect'>
@@ -81,13 +81,6 @@ export default function product() {
                         </div>
                     </a>
                 ))}
-            </div>
-            <div>
-                <div className="border-4 border-gray-500 mx-24 mt-20 mb-20 rounded-full"/>
-                <div className="flex flex-col items-center text-4xl mb-20">
-                        <p>Find were you can get these Green Go products</p>
-                        <Link className="bg-gradient-to-r from-green-100 to-blue-100 hover:from-green-200 hover:to-blue-50 px-10 py-2 m-4 duration-150 ease-in delay-75 rounded-full border-4 border-lightblue shadow-lightblue shadow-lg" href="/shop" target="_blank">Here</Link>
-                    </div>
             </div>
         </div>
     )

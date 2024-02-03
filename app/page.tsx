@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       <div className='grid-cols-2 grid mb-10'>
-        <div className=''>
+        <div className='pt-12'>
           <p className='ml-32 text-4xl'>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <p className='ml-32 text-3xl text-gray-700 mt-10'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
